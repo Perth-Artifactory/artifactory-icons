@@ -10,18 +10,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          name: icons
-      - uses: actions/checkout@master
+      - name: Checkout icons
+        uses: actions/checkout@v3
+      - name: Checkout generator
+        uses: actions/checkout@v3
         with:
           repository: Perth-Artifactory/ha-icon-generator
-          name: script
+          path: generator
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
       - run: |
-          tree
+          tree && pwd
       - run: |
           cd .. && tree
       - uses: jannekem/run-python-script-action@v1
