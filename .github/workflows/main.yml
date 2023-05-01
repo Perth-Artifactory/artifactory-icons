@@ -26,6 +26,8 @@ jobs:
           cd .. && tree
       - run: |
           python3 generator/generate.py svg af
+      - run: |
+          tree && pwd
       - uses: jannekem/run-python-script-action@v1
         with:
           script: |
