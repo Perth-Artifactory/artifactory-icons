@@ -23,8 +23,6 @@ jobs:
       - run: |
           tree && pwd
       - run: |
-          cd .. && tree
-      - run: |
           python3 generator/generate.py svg af
       - run: |
           tree && pwd
