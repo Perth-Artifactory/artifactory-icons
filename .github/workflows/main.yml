@@ -11,14 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          name: icons
       - uses: actions/checkout@master
         with:
           repository: Perth-Artifactory/ha-icon-generator
+          name: script
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
       - run: |
           tree
+      - run: |
+          cd .. && tree
       - uses: jannekem/run-python-script-action@v1
         with:
           script: |
