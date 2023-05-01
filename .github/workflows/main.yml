@@ -17,8 +17,8 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-      run: |
-        tree
+      - run: |
+          tree
       - uses: jannekem/run-python-script-action@v1
         with:
           script: |
