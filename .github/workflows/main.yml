@@ -22,7 +22,7 @@ jobs:
           python-version: '3.x'
       - name: Generate new js file from icons
         run: |
-          python3 generator/generate.py js af
+          python3 generator/generate.py svg af
       - name: Cleanup generator
         run: |
           rm -rf generator/
