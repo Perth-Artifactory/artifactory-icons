@@ -1,7 +1,6 @@
 # Artifactory Icons
-Artifactory specific icons for Home Asisstant
 
-![2FA](https://res.cloudinary.com/dcongin7u/image/upload/v1620853194/example_pwvozi.jpg)
+Artifactory specific icons for Home Asisstant
 
 ## Installation
 
@@ -10,14 +9,14 @@ Artifactory specific icons for Home Asisstant
   ```yaml
 frontend:
   extra_module_url:
-    - /local/community/artifactory-icons/af-icons.js
+    - /local/community/artifactory-icons/artifactory-icons.js
 ```
 2. (optional) Or add the following to your lovelace configuration using the Raw Config editor under Configure UI or ui-lovelace.yaml if using YAML mode.
 
 ```yaml
 resources:
   - type: js
-    url:  /local/community/artifactory-icons/af-icons.js
+    url:  /local/community/artifactory-icons/artifactory-icons.js
 ```
 
 3. Restart Home Assistant
