@@ -2,6 +2,8 @@
 
 Artifactory specific icons for Home Asisstant
 
+![Two variants of the Artifactory logo being used in a Home Assistant dashboard](usage.png)
+
 ## Installation
 
  1. Add the folowing to the `frontend` section of your `configuration.yaml`
